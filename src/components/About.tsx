@@ -1,7 +1,11 @@
 "use client";
 
-import { Box, Container, Typography, Paper } from "@mui/material";
+import { Box, Container, Typography, Paper, IconButton } from "@mui/material";
 import { motion } from "framer-motion";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const MotionBox = motion.create(Box);
 const MotionPaper = motion.create(Paper);
@@ -119,7 +123,7 @@ export default function About() {
                 variant="h6"
                 sx={{
                   fontWeight: 600,
-                  mb: 3,
+                  mb: 1,
                   textAlign: "center",
                   color: "text.secondary",
                   textTransform: "uppercase",
@@ -180,6 +184,82 @@ export default function About() {
                   >
                     Open to work
                   </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                    pt: 2,
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: 1,
+                  }}
+                >
+                  <IconButton
+                    component="a"
+                    href="https://github.com/yourusername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: "text.secondary",
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        color: "text.primary",
+                      },
+                    }}
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+
+                  <IconButton
+                    component="a"
+                    href="https://linkedin.com/in/yourusername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: "text.secondary",
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        color: "text.primary",
+                      },
+                    }}
+                  >
+                    <LinkedInIcon />
+                  </IconButton>
+
+                  <IconButton
+                    component="a"
+                    href="mailto:your.email@example.com"
+                    sx={{
+                      color: "text.secondary",
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        color: "text.primary",
+                      },
+                    }}
+                  >
+                    <EmailIcon />
+                  </IconButton>
+
+                  <IconButton
+                    component="a"
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: "text.secondary",
+                      backgroundColor: "rgba(255, 255, 255, 0.05)",
+                      "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                        color: "text.primary",
+                      },
+                    }}
+                  >
+                    <DescriptionIcon />
+                  </IconButton>
                 </Box>
               </Box>
             </MotionPaper>
