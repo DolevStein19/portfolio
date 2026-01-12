@@ -197,7 +197,7 @@ export default function About() {
                 >
                   <IconButton
                     component="a"
-                    href="https://github.com/yourusername"
+                    href="https://github.com/DolevStein19"
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
@@ -214,7 +214,7 @@ export default function About() {
 
                   <IconButton
                     component="a"
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/dolev-stein"
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
@@ -231,7 +231,7 @@ export default function About() {
 
                   <IconButton
                     component="a"
-                    href="mailto:your.email@example.com"
+                    href="mailto:dolevstein@gmail.com"
                     sx={{
                       color: "text.secondary",
                       backgroundColor: "rgba(255, 255, 255, 0.05)",
