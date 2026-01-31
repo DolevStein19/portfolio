@@ -65,7 +65,7 @@ export default function About() {
                   mb: 3,
                 }}
               >
-                I am a software engineer with 4+ years building web products. I
+                I am a software engineer with 2+ years building web products. I
                 focus on backend engineering, user experience and reliable APIs.
               </Typography>
 
